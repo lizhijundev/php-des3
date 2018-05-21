@@ -1,5 +1,6 @@
 {
     "name": "lizhijun/des3",
+    "version": "1.0.0",
     "description": "基于php的3DES函数库",
     "keywords": [
     "des3"
