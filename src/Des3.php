@@ -1,5 +1,5 @@
 <?php
-
+namespace lizhijun\utils;
 class Des3 {
     // DES3_KEY
     var $key;
@@ -22,7 +22,7 @@ class Des3 {
     public function encrypt($input){
         return base64_encode(openssl_encrypt($input, "des-ede3-cbc", $this->key, OPENSSL_RAW_DATA, $this->iv));
     }
-    
+
     public function decrypt($encrypted){
         return openssl_decrypt(base64_decode($encrypted), 'des-ede3-cbc', $this->key, OPENSSL_RAW_DATA, $this->iv);
     }

@@ -3,5 +3,5 @@
 
 ## 使用使用方法
 ```
-include dirname(__DIR__).'/Des3.php';
+composer require lizhijun/des3
 ```
