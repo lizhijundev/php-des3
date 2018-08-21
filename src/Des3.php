@@ -1,18 +1,20 @@
 <?php
-namespace lizhijun\utils;
+namespace Lizhijun\Des3;
+use Lizhijun\Des3\Exceptions\InvalidArgumentException;
+
 class Des3 {
     // DES3_KEY
-    var $key;
+    protected $key;
     // DES3_IV
-    var $iv;
+    protected $iv;
 
-    public function __construct($key = "gO6ufduPBAJXIXWDO2yVPAQv", $iv = "20170901")
+    public function __construct($key = "", $iv = "")
     {
         if (strlen($key) != 24){
-            throw new \Exception("DES3_KEY长度错误，长度为24");
+            throw new InvalidArgumentException("DES3_KEY长度错误，长度为24");
         }
         if (strlen($iv) != 8){
-            throw new \Exception("DES3_IV长度错误，长度为8");
+            throw new InvalidArgumentException("DES3_IV长度错误，长度为8");
         }
         $this->key = $key;
         $this->iv = $iv;

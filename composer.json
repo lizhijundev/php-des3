@@ -14,12 +14,13 @@
         }
     ],
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "phpunit/phpunit": "^7.2"
     },
      "license": "MIT",
      "autoload": {
             "psr-4": {
-                "lizhijun\\utils\\": "src/"
+                "Lizhijun\\Des3\\": "src/"
             }
         }
 }
