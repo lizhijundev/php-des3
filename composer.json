@@ -2,9 +2,7 @@
     "name": "lizhijun/des3",
     "version": "1.0.0",
     "description": "基于php的3DES函数库",
-    "keywords": [
-    "des3"
-  ],
+    "keywords": ["des3"],
     "homepage": "https://github.com/ZhijunLi/php-des3",
     "minimum-stability": "stable",
     "authors": [
@@ -15,6 +13,9 @@
     ],
     "require": {
         "php": ">=5.4",
+        "ext-openssl": ">=1.0"
+    },
+    "require-dev": {
         "phpunit/phpunit": "^7.2"
     },
      "license": "MIT",
